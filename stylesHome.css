@@ -1,0 +1,106 @@
+/* Estilo para telas maiores (Desktop e Tablets em modo paisagem) */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ffffff00;
+    color: white;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f2a5a5;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    padding-top: 60px;
+    color: white;
+}
+
+/* Quando o menu estiver aberto */
+.menu.open {
+    transform: translateX(0);
+}
+
+/* Estilo para o botão do menu sanduíche */
+.menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Estilos para a logo */
+.Logo {
+    width: 100px;
+    /* Ajuste conforme necessário */
+    height: auto;
+    margin-left: 40px;
+    /* Empurra a logo para a direita */
+}
+
+/* Estilo para os itens do menu */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Submenu oculto */
+.submenu {
+    display: none;
+}
+
+/* Exibe o submenu quando a classe 'open-submenu' é adicionada */
+.open-submenu {
+    display: block;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+
+    /* Reduz o tamanho da logo */
+    .Logo {
+        width: 90px;
+        margin-left: 30px;
+    }
+
+    /* Ajusta o botão de menu para centralizar melhor em dispositivos móveis */
+    .menu-toggle {
+        top: 15px;
+        left: 10px;
+    }
+
+    /* Reduz a largura do menu lateral para ocupar menos espaço */
+    .menu {
+        width: 200px;
+    }
+
+    /* Estilo do submenu para melhor visualização em telas pequenas */
+    .submenu {
+        padding-left: 20px;
+    }
+}

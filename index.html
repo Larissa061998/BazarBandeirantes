@@ -4,35 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesHome.css">
     <title>Bazar Bandeirantes</title>
 </head>
 
 <header>
-    <img src="/Fotos/Logo2.png" alt="Logo do Bazar Bandeirantes">
-    <nav class="menu">
+    <!-- Botão do menu sanduíche -->
+    <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <img class="Logo" src="/Fotos/Logo2.png" alt="Logo do Bazar Bandeirantes">
+    <!-- MENU -->
+    <nav id="menu" class="menu">
         <ul>
-            <li><a href=""></a>Sobre nós</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre nós</a></li>
             <li>
-                <a href=""></a>Produtos
-            <li><a href="">Brinquedos</a></li>
-            <li><a href="">Cama, mesa e banho</a></li>
-            <li><a href="">Feminino</a></li>
-            <li>
-                <a href="">Infantil</a>
-            <li><a href="">Menina</a></li>
-            <li><a href="">Menino</a></li>
+                <span class="menu-item-produtos">Produtos</span>
+                <!-- Submenu -->
+                <ul class="submenu">
+                    <li><a href="">Brinquedos</a></li>
+                    <li><a href="">Cama, mesa e banho</a></li>
+                    <li><a href="">Feminino</a></li>
+                    <li><a href="">Masculino</a></li>
+                    <li><a href="">Papelaria</a></li>
+                    <li><a href="">Utensílios de casa</a></li>
+                </ul>
             </li>
-            <li><a href="">Masculino</a></li>
-            <li><a href="">Papelaria</a></li>
-            <li><a href="">Utensílios de casa</a></li>
-            </li>
-            <li><a href=""></a>F.A.Q</li>
+            <li><a href="">Avaliações</a></li>
         </ul>
     </nav>
 </header>
 
 <body>
 
+    <script src="/scriptHome.js"></script>
 </body>
 
 </html>
