@@ -14,3 +14,4 @@ produtosLink.addEventListener('click', (e) => {
     e.preventDefault(); // Impede o redirecionamento padrão do link
     submenu.classList.toggle('open-submenu');
 });
+
