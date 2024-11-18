@@ -1,6 +1,5 @@
-
 /* Nav Bar */
-:root{
+:root {
     --cor-branca: #ffffff;
     --cor-preta: #000000;
     --cor-cinza: #333;
@@ -9,20 +8,20 @@
 
 /* começo da página de produtos Femininos */
 
-body{
+body {
     margin-top: 25px;
     margin-left: 25px;
 }
 
 .colunas {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
 }
 
 
-.categoria{
+.categoria {
     /* no texto colocar a imagem de fundo*/
-    margin: 50px;
+    margin: 25px;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -40,4 +39,37 @@ body{
     font-weight: bold;
     color: var(--cor-branca);
     text-shadow: 0px 0px 8px var(--cor-preta);
+}
+
+@media (max-width: 768px) {
+
+    .textos{
+        font-size: 20px;
+    }
+    .colunas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .categoria {
+        margin: 20px;
+        padding: 40px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--cor-branca);
+        background-image: url(/Fotos/WhatsApp\ Image\ 2024-10-29\ at\ 15.58.12.jpeg);
+        background-size: cover;
+        background-position: center;
+        width: 150px;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-weight: bold;
+        color: var(--cor-branca);
+        text-shadow: 0px 0px 8px var(--cor-preta);
+
+    }
 }
