@@ -5,28 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/stylesMenu.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <title>Bazar Bandeirantes</title>
 </head>
 
-<header class="cabecalho">
-    <!-- Botão do menu sanduíche -->
-    <div class="menu-toggle" id="menu-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
+<header class="cabecalho cabecalhomob">
+    <div class="navbar navbarmob">
 
-    <div class="navbar">
-        <img class="Logo" src="/Fotos/Logo2.png" alt="Logo do Bazar Bandeirantes">
+        <!-- Botão do menu sanduíche -->
+        <div class="menu-toggle" id="icon-menu">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+            <style>
+                .material-symbols-outlined {
+                    font-size: 40px;
+                }
+            </style>
+
+        </div>
+        <img class="Logo logomob" src="/Fotos/Logo2.png" alt="Logo do Bazar Bandeirantes">
         <!-- MENU -->
         <nav>
-            <ul id="menu" class="menu">
+            <ul id="menumob" class="menu">
+
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/sobreNos.html">Sobre nós</a></li>
                 <li>
-                    <span class="menu-item-produtos">Produtos</span>
+                    <span class="menu-item-produtos menu-item-produtosmob">Produtos</span>
                     <!-- Submenu -->
-                    <ul class="submenu">
+                    <ul class="submenu submenumob">
                         <li><a href="">Brinquedos</a></li>
                         <li><a href="">Cama, mesa e banho</a></li>
                         <li><a href="/produtofeminino.html">Feminino</a></li>

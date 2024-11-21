@@ -5,6 +5,7 @@
     --cor-rosa-claro: #f2a5a5;
 
 }
+
 /* alinhar o texto */
 
 
@@ -13,7 +14,7 @@
     align-items: center;
     background-color: var(--cor-rosa-claro);
     padding: 10px;
-    
+
 }
 
 .Logo {
@@ -41,45 +42,55 @@
 .menu li a {
     color: var(--cor-cinza);
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 7px 22px;
     display: block;
+    font-size: 1.2em;
 }
 
 .menu li a:hover {
-    background: var(--cor-cinza);
-    color: var(--cor-branca);
-    text-shadow: 0px 0px 5px var(--cor-branca);
+    background: #ed8686c5;
+    border-radius: 12px;
+    color: var(--cor-preta);
 }
 
 .menu li ul {
     position: absolute;
     top: 25px;
     left: 0;
-    background-color: var(--cor-branca);
+    background-color: var(--cor-rosa-claro);
     display: none;
+}
+
+.submenu {
+    border: 2px solid #ed8686c5;
+    border-radius: 2px;
 }
 
 .menu li:hover ul,
 .menu li.over ul {
     display: block;
+    padding: 2px;
 }
 
 .menu li ul li {
     display: block;
-    width: 150px;
+    width: 210px;
+
 }
 
 .menu-item-produtos {
     color: var(--cor-cinza);
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 7px 22px;
     display: block;
+    font-size: 1.2em;
 }
 
 .menu-item-produtos:hover {
-    background: var(--cor-cinza);
-    color: var(--cor-branca);
-    text-shadow: 0px 0px 5px var(--cor-branca);
+    background: #ed8686c5;
+    border-radius: 12px;
+    color: var(--cor-preta);
+
 }
 
 .menu-item-produtos ul {
@@ -94,51 +105,29 @@
 /* Media Query para dispositivos móveis */
 @media (max-width: 768px) {
 
-    .navbar {
+    .navbarmob {
         display: flex;
         align-items: center;
         background-color: var(--cor-rosa-claro);
-        padding: 10px;
+        padding: 30px;
+        z-index: 974538;
     }
 
-    .menu {
-        position: fixed;
-        left: 0;
-        top: 0;
+    #menumob {
+        display: none;
         height: 100%;
-        width: 250px;
+        width: 200px;
         background-color: var(--cor-rosa-claro);
-        transform: translateX(-100%);
         transition: transform 0.3s ease;
-        overflow-y: auto;
-        padding-top: 60px;
         color: var(--cor-branca);
-    }
-
-    /* Quando o menu estiver aberto */
-    .menu.open {
-        transform: translateX(0);
-    }
-
-    /* Estilo para o botão do menu sanduíche */
-    .menu-toggle {
         position: fixed;
-        top: 15px;
-        left: 15px;
-        cursor: pointer;
-        z-index: 1001;
-    }
-
-    .menu-toggle .bar {
-        width: 30px;
-        height: 3px;
-        background-color: var(--cor-cinza);
-        margin: 5px 0;
-        transition: 0.4s;
+        top: 0;
+        left: 0;
+        flex-direction: column;
     }
 
     /* Estilos para a logo */
-    .Logo {
+    .logomob {
         width: 100px;
         /* Ajuste conforme necessário */
         height: auto;
@@ -147,29 +136,52 @@
     }
 
     /* Estilo para os itens do menu */
-    .menu ul {
+    .menumob ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
     }
 
-    .menu li {
+    .menumob li {
         padding: 15px;
     }
 
-    .menu a {
+    .menumob a {
         color: var(--cor-branca);
         text-decoration: none;
     }
 
     /* Submenu oculto */
-    .submenu {
+    .submenumob {
         display: none;
     }
 
     /* Exibe o submenu quando a classe 'open-submenu' é adicionada */
-    .open-submenu {
+    .open-submenumob {
         display: block;
+    }
+
+    .menu-item-produtosmob {
+        color: var(--cor-branca);
+        text-decoration: none;
+        padding: 7px 22px;
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .menu-item-produtos {
+        color: var(--cor-cinza);
+        text-decoration: none;
+        padding: 7px 22px;
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .menu-item-produtos:hover {
+        background: #ed8686c5;
+        border-radius: 12px;
+        color: var(--cor-preta);
+
     }
 
 }
