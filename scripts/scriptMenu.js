@@ -15,3 +15,24 @@ produtosLink.addEventListener('click', (e) => {
 });
 
 
+//Botao Voltar ao Topo
+// Seleciona o botão
+const voltarTopo = document.getElementById("voltarTopo");
+
+// Detecta o scroll da página
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    // Mostra o botão se o scroll passar de 200px
+    voltarTopo.classList.add("show");
+  } else {
+    // Esconde o botão se o scroll for menor que 200px
+    voltarTopo.classList.remove("show");
+  }
+});
+
+// Comportamento de voltar ao topo
+voltarTopo.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll suave até o topo
+});
+

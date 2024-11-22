@@ -1,9 +1,14 @@
 /* Nav Bar */
 :root {
-    --cor-branca: #ffffff;
-    --cor-preta: #000000;
-    --cor-cinza: #333;
-    --cor-rosa-claro: #f2a5a5;
+    --branco: #ffffff;
+    --preto: #000000;
+    --cinza: #333;
+    --rosa-claro: #f2a5a5;
+    --rosa-salmao: #ed8686c5;
+    --vermelho-escuro: #ad0f0f;
+    --bege: #ffe4e1;
+    --verde-escuro: #25d366;
+
 }
 
 /* começo da página de produtos Femininos */
@@ -11,6 +16,11 @@
 body {
     margin-top: 25px;
     margin-left: 25px;
+}
+
+.textos{
+    font-size: 30px;
+    padding-left: 25px;
 }
 
 .colunas {
@@ -25,20 +35,20 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
-    color: var(--cor-branca);
+    color: var(--branco);
     background-image: url(/Fotos/WhatsApp\ Image\ 2024-10-29\ at\ 15.58.12.jpeg);
     background-size: cover;
     background-position: center;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     justify-content: center;
     align-items: center;
     display: flex;
     font-weight: bold;
-    color: var(--cor-branca);
-    text-shadow: 0px 0px 8px var(--cor-preta);
+    color: var(--branco);
+    text-shadow: 10px 0px 10px var(--preto);
 }
 
 @media (max-width: 768px) {
@@ -58,7 +68,7 @@ body {
         text-align: center;
         font-size: 25px;
         font-weight: bold;
-        color: var(--cor-branca);
+        color: var(--branco);
         background-image: url(/Fotos/WhatsApp\ Image\ 2024-10-29\ at\ 15.58.12.jpeg);
         background-size: cover;
         background-position: center;
@@ -68,8 +78,8 @@ body {
         align-items: center;
         display: flex;
         font-weight: bold;
-        color: var(--cor-branca);
-        text-shadow: 0px 0px 8px var(--cor-preta);
+        color: var(--branco);
+        text-shadow: 0px 0px 8px var(--preto);
 
     }
 }
