@@ -10,6 +10,7 @@
 
 }
 
+
 /* alinhar o texto */
 
 
@@ -64,19 +65,13 @@ footer {
     background-color: var(--bege);
     color: var(--preto);
     padding: 10px 10PX;
-    position: relative;
+    
 }
 
-.footer-container {
+.footer-container{
     display: flex;
-    /* Alinha itens horizontalmente */
     justify-content: space-between;
-    /* Espaça os itens ao longo do eixo horizontal */
-    /* align-items: flex-start; */
-    /* Alinha ao topo */
-    max-width: 1500px;
 
-    padding: 0 15px;
 }
 
 .informações {
@@ -107,7 +102,7 @@ footer {
 } */
 
 .mapa img {
-    margin-left: 1000PX;
+    
     width: 100%;
     /* Faz o mapa ocupar toda a largura */
     max-width: 500px;
@@ -252,7 +247,7 @@ footer {
     .footer-container {
         flex-direction: column;
         /* Alinha os itens em coluna em telas pequenas */
-        align-items: center;
+        align-items: justify;
     }
 
     .informacoes {

@@ -7,6 +7,7 @@
     --vermelho-escuro: #ad0f0f;
     --bege: #ffe4e1;
     --verde-escuro: #25d366;
+    --rosa-bebe: #f7d7d7;
 }
 
 .faixa {
@@ -93,6 +94,18 @@
 
 .ponto.active {
     background-color: var(--cinza-claro);
+}
+
+.marcas {
+    display: flex;
+    background-color: var(--rosa-bebe);
+}
+
+.marcas_logos {
+    display: flex;
+    margin-top: 20px;
+    width: 50%;
+
 }
 
 /* Ajustes para telas menores */
