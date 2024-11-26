@@ -13,26 +13,24 @@
     border: 5px solid var(--rosa-claro);
     border-radius: 20px;
     width: 90%;
-    margin: 0 auto;
+    margin: 20px;
     margin-top: 50px;
     padding: 20px;
 }
 
 .sobrenos-img{
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    width: 300px;
+    border: 1px solid var(--rosa-claro);
+    border-radius: 20px;
+    float: right;
 
+    
 }
-
 
 .text-sobrenos{
     padding-right: 50px;
-}
-
-.imagem-sobrenos{
-    width: 50%;
-    margin-right: 20px;
-        
 }
 
 .text-empresa{
