@@ -127,4 +127,31 @@
         height: 8px;
         width: 8px;
     }
+
+    .carousel-item {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .carousel-item h3 {
+        font-size: 1em;
+    }
+
+    .carousel-item p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        padding: 10px;
+    }
+
+    .carousel-item h3 {
+        font-size: 0.9em;
+    }
+
+    .carousel-item p {
+        font-size: 0.8em;
+    }
 }
