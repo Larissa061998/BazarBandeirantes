@@ -101,11 +101,13 @@
         width: 95%;
         /* Aumenta a largura do carrossel em telas menores */
         max-width: 100%;
+        z-index: 1;
     }
 
     .botao-carrossel {
         font-size: 18px;
         padding: 8px;
+        z-index: 1;
     }
 
     .ponto {
