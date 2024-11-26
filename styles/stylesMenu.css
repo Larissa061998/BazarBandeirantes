@@ -74,6 +74,7 @@
 .menu li.over ul {
     display: block;
     padding: 2px;
+    z-index: 10;
 }
 
 .menu li ul li {
@@ -88,12 +89,14 @@
     padding: 7px 22px;
     display: block;
     font-size: 1.2em;
+    z-index: 10;
 }
 
 .menu-item-produtos:hover {
     background: var(--rosa-salmao);
     border-radius: 12px;
     color: var(--preto);
+    z-index: 10;
 
 }
 
@@ -103,6 +106,7 @@
     left: 0;
     background-color: var(--branco);
     display: none;
+    z-index: 10;
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -123,12 +127,12 @@ footer {
     /* align-items: flex-start; */
     /* Alinha ao topo */
     max-width: 1500px;
-  
+
     padding: 0 15px;
 }
 
-.informações{
-    
+.informações {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,65 +180,75 @@ footer {
 /* Botão "Voltar ao topo" */
 .voltar-topo {
     position: fixed;
-    bottom: 90px; 
+    bottom: 90px;
     right: 20px;
-    width: 60px; 
-    height: 60px; 
-    background-color: var(--preto); 
+    width: 60px;
+    height: 60px;
+    background-color: var(--preto);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; 
-    opacity: 0; /* Invisível por padrão */
-    visibility: hidden; /* Esconde completamente */
+    z-index: 1000;
+    opacity: 0;
+    /* Invisível por padrão */
+    visibility: hidden;
+    /* Esconde completamente */
     transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-  
-  /* Ajusta o ícone */
-  .voltar-topo img {
-    width: 45px;  
-    height: 45dpx; 
+}
+
+/* Ajusta o ícone */
+.voltar-topo img {
+    width: 45px;
+    height: 45dpx;
     object-fit: contain;
-    filter: invert(1); /* Torna o ícone branco */
-  }
-  
-  /* Botão visível */
-  .voltar-topo.show {
-    opacity: 1; /* Torna visível */
-    visibility: visible; /* Garante que está visível */
-  }
+    filter: invert(1);
+    /* Torna o ícone branco */
+}
+
+/* Botão visível */
+.voltar-topo.show {
+    opacity: 1;
+    /* Torna visível */
+    visibility: visible;
+    /* Garante que está visível */
+}
+
 /* --------------------------------------------------------------------------------------------- */
-  /* Botão do WhatsApp */
+/* Botão do WhatsApp */
 .whatsapp-botao {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 60px; 
-    height: 60px; 
-    background-color: var(--verde-escuro); 
+    width: 60px;
+    height: 60px;
+    background-color: var(--verde-escuro);
     border-radius: 50%;
-    box-shadow: 0 4px 6px var(--preto); /* Sombra */
+    box-shadow: 0 4px 6px var(--preto);
+    /* Sombra */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Sempre visível */
+    z-index: 1000;
+    /* Sempre visível */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Ajusta o ícone */
-  .whatsapp-botao img {
+}
+
+/* Ajusta o ícone */
+.whatsapp-botao img {
     width: 40px;
     height: 40px;
     object-fit: contain;
-  }
-  
-  /* Efeito hover */
-  .whatsapp-botao:hover {
-    transform: scale(1.1); 
-    box-shadow: 0 6px 8px var(--preto); /* Sombra mais intensa */
-  }
-  /*---------------------------------------------------------------------------------------------------------------  */
+}
+
+/* Efeito hover */
+.whatsapp-botao:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px var(--preto);
+    /* Sombra mais intensa */
+}
+
+/*---------------------------------------------------------------------------------------------------------------  */
 
 
 /* Media Query para dispositivos móveis */
@@ -318,7 +332,8 @@ footer {
         color: var(--preto);
 
     }
-/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+    /* ------------------------------------------------------------------------------------------------------------------------------ */
     /* Rodapé */
     .footer-container {
         flex-direction: column;
