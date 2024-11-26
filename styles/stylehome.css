@@ -1,4 +1,4 @@
-:root{
+:root {
     --branco: #ffffff;
     --preto: #000000;
     --cinza: #333;
@@ -8,41 +8,49 @@
     --bege: #ffe4e1;
     --verde-escuro: #25d366;
 }
+
 .faixa {
     background-color: var(--bege-claro);
     padding: 20px 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
-  }
-  
-  /* Carrossel */
-  .carrossel {
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+/* Carrossel */
+.carrossel {
     position: relative;
-    width: 90%; 
+    width: 90%;
     max-width: 800px;
-    aspect-ratio: 16/9; /* Mantém a proporção da tela */
+    aspect-ratio: 16/9;
+    /* Mantém a proporção da tela */
     overflow: hidden;
     border-radius: 15px;
-    margin: 0 auto; 
-  }
-  
-  /* Imagens */
-  .imagens-carrossel {
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/* Imagens */
+.imagens-carrossel {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
-  
-  .imagens-carrossel img {
-    width: 100%; /* Ocupar toda a largura do carrossel */
-    height: 100%; /* Ajuste automático pela proporção */
+    z-index: 1;
+}
+
+.imagens-carrossel img {
+    width: 100%;
+    /* Ocupar toda a largura do carrossel */
+    height: 100%;
+    /* Ajuste automático pela proporção */
     object-fit: cover;
     flex-shrink: 0;
     border-radius: 15px;
-  }
-  
-  /* Botões de navegação */
-  .botao-carrossel {
+    z-index: 1;
+}
+
+/* Botões de navegação */
+.botao-carrossel {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -53,26 +61,26 @@
     cursor: pointer;
     font-size: 24px;
     z-index: 1;
-  }
-  
-  .anterior {
+}
+
+.anterior {
     left: 10px;
-  }
-  
-  .proxima {
+}
+
+.proxima {
     right: 10px;
-  }
-  
-  /* Indicadores (bolinhas) */
-  .indicadores-carrossel {
+}
+
+/* Indicadores (bolinhas) */
+.indicadores-carrossel {
     position: absolute;
     bottom: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-  
-  .ponto {
+}
+
+.ponto {
     height: 10px;
     width: 10px;
     margin: 0 5px;
@@ -81,27 +89,27 @@
     display: inline-block;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .ponto.active {
+}
+
+.ponto.active {
     background-color: var(--cinza-claro);
-  }
-  
-  /* Ajustes para telas menores */
-  @media (max-width: 768px) {
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
     .carrossel {
-      width: 95%; /* Aumenta a largura do carrossel em telas menores */
-      max-width: 100%;
+        width: 95%;
+        /* Aumenta a largura do carrossel em telas menores */
+        max-width: 100%;
     }
-  
+
     .botao-carrossel {
-      font-size: 18px;
-      padding: 8px;
+        font-size: 18px;
+        padding: 8px;
     }
-  
+
     .ponto {
-      height: 8px;
-      width: 8px;
+        height: 8px;
+        width: 8px;
     }
-  }
-  
+}
