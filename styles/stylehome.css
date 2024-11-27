@@ -107,6 +107,61 @@
     width: 50%;
 
 }
+=======
+.avaliacoes {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.avaliacoes h2 {
+    font-size: 24px;
+    color: var(--vermelho-escuro);
+    margin-bottom: 20px;
+}
+
+/* Carrossel */
+.avaliacoes-carrossel {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    /* Remove o scroll */
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    /* Suaviza a transição */
+    width: 100%;
+    /* Define o espaço visível */
+}
+
+.avaliacao {
+    flex: 0 0 calc(33.333% - 20px);
+    /* Sempre exibe 3 cards */
+    max-width: calc(33.333% - 20px);
+    height: 200px;
+    background-color: var(--branco);
+    border: 1px solid var(--rosa-claro);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.avaliacao p {
+    font-size: 16px;
+    color: var(--cinza);
+    margin-bottom: 10px;
+}
+
+.avaliacao span {
+    font-size: 14px;
+    color: var(--cinza-claro);
+    font-style: italic;
+}
+
+
 
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
@@ -128,30 +183,54 @@
         width: 8px;
     }
 
-    .carousel-item {
-        padding: 15px;
-        font-size: 0.9em;
+    .avaliacoes-carrossel {
+        width: 90%;
+        /* Ocupar 90% da tela menor */
+        height: auto;
+        /* Altura ajustável */
+        max-width: 400px;
     }
 
-    .carousel-item h3 {
-        font-size: 1em;
+    .avaliacao {
+        flex: 0 0 calc(50% - 20px);
+        /* 2 cards visíveis em telas menores */
+        max-width: calc(50% - 20px);
     }
 
-    .carousel-item p {
-        font-size: 0.9em;
+    .avaliacao p {
+        font-size: 14px;
+        /* Texto menor em telas pequenas */
+    }
+
+    .avaliacao span {
+        font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
-    .carousel-item {
-        padding: 10px;
+    .avaliacao {
+        flex: 0 0 100%;
+        /* 1 card visível por vez em celulares */
+        max-width: 100%;
     }
 
-    .carousel-item h3 {
-        font-size: 0.9em;
+    .avaliacoes h2 {
+        font-size: 20px;
+        /* Título menor para telas muito pequenas */
     }
 
-    .carousel-item p {
-        font-size: 0.8em;
+    .avaliacoes-carrossel {
+        width: 100%;
+        /* Ajusta para ocupar a tela */
+        max-width: 300px;
+        /* Limita a largura */
+    }
+
+    .avaliacao p {
+        font-size: 12px;
+    }
+
+    .avaliacao span {
+        font-size: 10px;
     }
 }
