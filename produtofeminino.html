@@ -9,34 +9,30 @@
     <title>Bazar Bandeirantes</title>
 </head>
 
-<header class="cabecalho">
-    <!-- Botão do menu sanduíche -->
-    <div class="menu-toggle" id="menu-toggle">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
+<header class="cabecalho cabecalhomob">
+    <div class="navbar navbarmob">
 
-    <div class="navbar">
-        <img class="Logo" src="/Fotos/Logo2.png" alt="Logo do Bazar Bandeirantes">
+        <!-- Botão do menu sanduíche -->
+        <div class="menu-toggle" id="icon-menu">
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+            <style>
+                .material-symbols-outlined {
+                    font-size: 40px;
+                }
+            </style>
+
+        </div>
+        <img class="Logo logomob" src="/Fotos/Logo2.png" alt="Logo do Bazar Bandeirantes">
         <!-- MENU -->
         <nav>
-            <ul id="menu" class="menu">
+            <ul id="menumob" class="menu">
+
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/sobreNos.html">Sobre nós</a></li>
-                <li>
-                    <span class="menu-item-produtos">Produtos</span>
-                    <!-- Submenu -->
-                    <ul class="submenu">
-                        <li><a href="/produtofeminino.html">Feminino</a></li>
-                        <li><a href="">Masculino</a></li>
-                        <!-- <li><a href="">Brinquedos</a></li> -->
-                        <!-- <li><a href="">Cama, mesa e banho</a></li> -->
-                        <!-- <li><a href="">Papelaria</a></li> -->
-                        <!-- <li><a href="">Utensílios de casa</a></li> -->
-                    </ul>
-                </li>
-                <!-- <li><a href="">Avaliações</a></li> -->
+                <li><a href="/produtofeminino.html">Femininos</a></li>
+                <li><a href="/masculino.html">Masculino</a></li>
             </ul>
         </nav>
     </div>
@@ -45,8 +41,8 @@
 
 <body>
     <div class="textos">
-        <h1>Produtos Femininos</h1>
-        <p>Escolha a categoria que deseja visualizar os produtos</p>
+        <h1>Produtos Feminino</h1>
+        <!-- <p>Escolha a categoria que deseja visualizar os produtos</p> -->
     </div>
     <div class="colunas">
         <div class="blusa">
@@ -102,16 +98,16 @@
             <p><strong>Facebook: <a href="https://www.facebook.com/bazarbandeirante" target="_blank">Bazar
                         Bandeirante </strong></a></p>
         </div>
-    </div>
 
-
-    </div>
-    <div class="mapa">
-        <a href="https://www.google.com/maps/place/bazar+bandeirante/@-23.40294,-51.915363,15z/data=!4m6!3m5!1s0x94ecd1ec59d468d3:0x7c272ef7e341385c!8m2!3d-23.40294!4d-51.915363!16s%2Fg%2F11gtz1kbky?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D"
+        <div class="mapa footer-container">
+            <a href="https://www.google.com/maps/place/bazar+bandeirante/@-23.40294,-51.915363,15z/data=!4m6!3m5!1s0x94ecd1ec59d468d3:0x7c272ef7e341385c!8m2!3d-23.40294!4d-51.915363!16s%2Fg%2F11gtz1kbky?entry=ttu&g_ep=EgoyMDI0MTExOC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank">
             <img src="/Fotos/Mapa.PNG" alt="Google Maps">
-        </a>
+            </a>
+        </div>
     </div>
+
+
 
 </footer>
 
