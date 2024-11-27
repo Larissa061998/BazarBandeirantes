@@ -49,12 +49,12 @@ setInterval(() => {
 mostrarImagem(indiceAtual);
 
 // Função para iniciar o carrossel de avaliacoes
-const carrossel = document.querySelector('.avaliacoes-carrossel');
-const avaliacoes = document.querySelectorAll('.avaliacao');
+const carrossel = document.querySelector('.marcas-carrossel');
+const marcas = document.querySelectorAll('.marca');
 let currentIndex = 0;
 
 function iniciarCarrossel() {
-    const cardWidth = avaliacoes[0].offsetWidth + 20; // Inclui o gap
+    const cardWidth = marcas[0].offsetWidth + 20; // Inclui o gap
     carrossel.style.transform = `translateX(0)`; // Garante o início
 
     setInterval(() => {
