@@ -82,7 +82,22 @@
 /* Media Query para dispositivos móveis */
 @media (max-width: 768px) {
 
+    .card{
+        padding: auto;
+    }
+
+    .titulo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-empresa{
+        padding: 15px;
+        margin: 1px;
+    }
     
 }
+
+
 
 

@@ -76,7 +76,6 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-
 }
 
 .informações {
@@ -89,6 +88,10 @@ footer {
 .informacoes_contatos p {
     margin: 5px 0;
     font-size: 30px;
+    text-align: left;
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 35px;
 }
 
 .informacoes_contatos a {
@@ -266,7 +269,18 @@ footer {
     }
 
     .mapa img {
-        max-width: 100%;
+        max-width: 50%;
         /* Imagem do mapa ocupa toda a largura em telas pequenas */
+    }
+}
+
+@media (max-width: 480px){
+    .footer-container{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .voltar-topo, .whatsapp-botao{
+        margin-right: 50px;
     }
 }
