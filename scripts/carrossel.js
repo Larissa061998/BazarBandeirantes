@@ -52,23 +52,29 @@ setInterval(() => {
 // Inicializar o carrossel na primeira imagem
 mostrarImagem(indiceAtual);
 
-// Opção para loop infinito
-const carouselTrack = document.querySelector('.carousel-track');
-
+// Duplicar as avaliações para evitar lacunas
+avaliacoes.forEach((avaliacao) => {
+    const clone = avaliacao.cloneNode(true);
+    carrossel.appendChild(clone);
+});
 
 function passarCarrossel() {
-    // Move o carrossel
+    // Calcula o deslocamento com base na largura de um card
+    const cardWidth = avaliacoes[0].offsetWidth + 20; // Inclui o gap
     currentIndex++;
-    if (currentIndex > avaliacoes.length - 3) {
-        currentIndex = 0; // Reinicia o índice ao final
-    }
 
-    // Calcula o deslocamento necessário
-    const deslocamento = currentIndex * (avaliacoes[0].offsetWidth + 20);
-    carrossel.style.transform = `translateX(-${deslocamento}px)`;
+    // Reinicia o carrossel quando chegar ao final
+    if (currentIndex >= avaliacoes.length) {
+        carrossel.style.transition = 'none'; // Remove a transição para reiniciar
+        currentIndex = 0; // Volta ao início
+        carrossel.style.transform = `translateX(0)`;
+        setTimeout(() => {
+            carrossel.style.transition = 'transform 0.5s ease-in-out'; // Restaura a transição
+        });
+    } else {
+        carrossel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
 }
 
 // Inicia o carrossel automático a cada 5 segundos
 setInterval(passarCarrossel, 5000);
-
-

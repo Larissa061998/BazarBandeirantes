@@ -102,7 +102,7 @@
 
 .avaliacoes h2 {
     font-size: 24px;
-    color: var(--vermelho-escuro);
+    color: var(--preto);
     margin-bottom: 20px;
 }
 
@@ -120,8 +120,7 @@
 }
 
 .avaliacao {
-    flex: 0 0 calc(33.333% - 20px);
-    /* Sempre exibe 3 cards */
+    flex: 0 0 calc(33.333% - 20px); /* Sempre mostra 3 cards */
     max-width: calc(33.333% - 20px);
     height: 200px;
     background-color: var(--branco);
