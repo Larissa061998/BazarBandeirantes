@@ -96,31 +96,36 @@
     background-color: var(--cinza-claro);
 }
 
-.marcas {
-    display: flex;
-    background-color: var(--rosa-bebe);
+.icone{
+    font-size: 32px;
+    color: var(--preto);
+    
+    margin-bottom: 20px;
+    margin: 20px;
 }
 
-.marcas_logos {
+.barra-icones {
+    display: flex;
+    background-color: var(--rosa-bebe);
+    
+}
+
+.barra-icones_logos {
     display: flex;
     margin-top: 20px;
     width: 50%;
-
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
 }
 
-.avaliacoes {
+.marcas {
     padding: 40px 20px;
     text-align: center;
 }
 
-.avaliacoes h2 {
-    font-size: 24px;
-    color: var(--preto);
-    margin-bottom: 20px;
-}
-
 /* Carrossel */
-.avaliacoes-carrossel {
+.marcas-carrossel {
     display: flex;
     gap: 20px;
     overflow: hidden;
@@ -132,7 +137,7 @@
     /* Define o espaço visível */
 }
 
-.avaliacao {
+.marca {
     flex: 0 0 calc(33% - 20px);
     /* Mostra sempre 3 cards */
     max-width: calc(31.4% - 20px);
@@ -149,16 +154,37 @@
     padding: 20px;
 }
 
-.avaliacao p {
+.marca img {
     font-size: 16px;
     color: var(--cinza);
     margin-bottom: 10px;
+    width: 350px;
+    height: 150px;
 }
 
-.avaliacao span {
+.marca span {
     font-size: 14px;
     color: var(--cinza-claro);
     font-style: italic;
+}
+
+.comentarios{
+    display: flex;
+    
+}
+
+.avaliacao{
+    border: var(--rosa-bebe) 6px solid;
+    margin: 20px;
+    margin-top: 0;
+    border-radius: 20px;
+}
+
+.avaliacoes h2{
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
 
@@ -183,54 +209,69 @@
         width: 8px;
     }
 
-    .avaliacoes-carrossel {
-        width: 90%;
+    .marcas-carrossel {
+        /* width: 100%; */
         /* Ocupar 90% da tela menor */
+        width: 50px;
         height: auto;
         /* Altura ajustável */
         max-width: 400px;
     }
 
-    .avaliacao {
+    .marca {
         flex: 0 0 calc(50% - 20px);
         /* 2 cards visíveis em telas menores */
         max-width: calc(50% - 20px);
     }
 
-    .avaliacao p {
-        font-size: 14px;
+    .marca img {
+        width: 50px;
+        height: 50px;
         /* Texto menor em telas pequenas */
     }
 
-    .avaliacao span {
+    .marca span {
         font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
-    .avaliacao {
+
+    .barra-icones{
+        background-color: var(--rosa-bebe);
+    }
+
+    .barra-icones_logos{
+        display: flex;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .icone{
+        width: 50px;
+        height: 50px;
+    }
+
+    .marca {
         flex: 0 0 100%;
         /* 1 card visível por vez em celulares */
         max-width: 100%;
     }
 
-    .avaliacoes h2 {
-        font-size: 20px;
-        /* Título menor para telas muito pequenas */
-    }
-
-    .avaliacoes-carrossel {
+    .marcas-carrossel {
         width: 100%;
         /* Ajusta para ocupar a tela */
         max-width: 300px;
         /* Limita a largura */
     }
 
-    .avaliacao p {
+    .marca img {
         font-size: 12px;
+        width: 250px;
+        height: 250px;
     }
 
-    .avaliacao span {
+    .marca span {
         font-size: 10px;
     }
 }
