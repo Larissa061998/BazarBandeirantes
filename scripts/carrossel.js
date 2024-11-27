@@ -1,8 +1,4 @@
 //CARROSSEL
-const carrossel = document.querySelector('.avaliacoes-carrossel');
-const avaliacoes = document.querySelectorAll('.avaliacao');
-let currentIndex = 0;
-
 let indiceAtual = 0;
 
 // Função para exibir a imagem correspondente ao índice
@@ -52,29 +48,27 @@ setInterval(() => {
 // Inicializar o carrossel na primeira imagem
 mostrarImagem(indiceAtual);
 
-// Duplicar as avaliações para evitar lacunas
-avaliacoes.forEach((avaliacao) => {
-    const clone = avaliacao.cloneNode(true);
-    carrossel.appendChild(clone);
-});
+// Função para iniciar o carrossel de avaliacoes
+const carrossel = document.querySelector('.avaliacoes-carrossel');
+const avaliacoes = document.querySelectorAll('.avaliacao');
+let currentIndex = 0;
 
-function passarCarrossel() {
-    // Calcula o deslocamento com base na largura de um card
+function iniciarCarrossel() {
     const cardWidth = avaliacoes[0].offsetWidth + 20; // Inclui o gap
-    currentIndex++;
+    carrossel.style.transform = `translateX(0)`; // Garante o início
 
-    // Reinicia o carrossel quando chegar ao final
-    if (currentIndex >= avaliacoes.length) {
-        carrossel.style.transition = 'none'; // Remove a transição para reiniciar
-        currentIndex = 0; // Volta ao início
-        carrossel.style.transform = `translateX(0)`;
+    setInterval(() => {
+        carrossel.style.transition = 'transform 0.5s ease-in-out';
+        carrossel.style.transform = `translateX(-${cardWidth}px)`;
+
+        // Após a transição, reposiciona os elementos
         setTimeout(() => {
-            carrossel.style.transition = 'transform 0.5s ease-in-out'; // Restaura a transição
-        });
-    } else {
-        carrossel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-    }
+            carrossel.style.transition = 'none'; // Remove a transição
+            const primeiroCard = carrossel.firstElementChild;
+            carrossel.appendChild(primeiroCard); // Move o primeiro card para o final
+            carrossel.style.transform = `translateX(0)`; // Reseta a posição
+        }, 500); // Tempo igual ao da transição
+    }, 5000); // Tempo de intervalo (5 segundos)
 }
 
-// Inicia o carrossel automático a cada 5 segundos
-setInterval(passarCarrossel, 5000);
+iniciarCarrossel();

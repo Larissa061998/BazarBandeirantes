@@ -107,7 +107,7 @@
     width: 50%;
 
 }
-=======
+
 .avaliacoes {
     padding: 40px 20px;
     text-align: center;
@@ -133,8 +133,9 @@
 }
 
 .avaliacao {
-    flex: 0 0 calc(33.333% - 20px); /* Sempre mostra 3 cards */
-    max-width: calc(33.333% - 20px);
+    flex: 0 0 calc(33% - 20px);
+    /* Mostra sempre 3 cards */
+    max-width: calc(31.4% - 20px);
     height: 200px;
     background-color: var(--branco);
     border: 1px solid var(--rosa-claro);
