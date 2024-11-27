@@ -1,4 +1,7 @@
 //CARROSSEL
+const carrossel = document.querySelector('.avaliacoes-carrossel');
+const avaliacoes = document.querySelectorAll('.avaliacao');
+let currentIndex = 0;
 
 let indiceAtual = 0;
 
@@ -52,13 +55,20 @@ mostrarImagem(indiceAtual);
 // Opção para loop infinito
 const carouselTrack = document.querySelector('.carousel-track');
 
-// Clona os itens para criar um loop infinito
-function cloneCarouselItems() {
-    const items = carouselTrack.children;
-    for (let i = 0; i < items.length; i++) {
-        const clone = items[i].cloneNode(true);
-        carouselTrack.appendChild(clone);
+
+function passarCarrossel() {
+    // Move o carrossel
+    currentIndex++;
+    if (currentIndex > avaliacoes.length - 3) {
+        currentIndex = 0; // Reinicia o índice ao final
     }
+
+    // Calcula o deslocamento necessário
+    const deslocamento = currentIndex * (avaliacoes[0].offsetWidth + 20);
+    carrossel.style.transform = `translateX(-${deslocamento}px)`;
 }
 
-cloneCarouselItems();
+// Inicia o carrossel automático a cada 5 segundos
+setInterval(passarCarrossel, 5000);
+
+
