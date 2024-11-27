@@ -47,15 +47,20 @@
 .menu li a {
     color: var(--cinza);
     text-decoration: none;
-    padding: 7px 22px;
-    display: block;
-    font-size: 1.2em;
+    padding: 15px 22px;
+    display: flex;
+    font-size: 1.5em;
 }
 
 .menu li a:hover {
     background: var(--rosa-salmao);
     border-radius: 12px;
     color: var(--preto);
+}
+
+.menu-toggle {
+    display: none;
+    /* Esconde por padrão */
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -65,10 +70,10 @@ footer {
     background-color: var(--bege);
     color: var(--preto);
     padding: 10px 10PX;
-    
+
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: space-between;
 
@@ -102,7 +107,7 @@ footer {
 } */
 
 .mapa img {
-    
+
     width: 100%;
     /* Faz o mapa ocupar toda a largura */
     max-width: 500px;
@@ -227,7 +232,7 @@ footer {
         margin-left: 40px;
         /* Empurra a logo para a direita */
     }
- 
+
     .menumob li {
         padding: 20px;
         /* Espaçamento interno */
@@ -237,10 +242,16 @@ footer {
     .menumob a {
         color: var(--branco);
         text-decoration: none;
-        z-index: 10;  
+        z-index: 10;
         position: fixed;
         left: 30px;
     }
+
+    .menu-toggle {
+        display: block;
+        /* Mostra no mobile */
+    }
+
 
     /* ---------------------------------------------------------------------------------- */
     /* Rodapé */
