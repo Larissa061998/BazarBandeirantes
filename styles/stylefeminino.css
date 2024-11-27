@@ -18,7 +18,7 @@ body {
     margin-left: 25px;
 }
 
-.textos{
+.textos {
     font-size: 30px;
     padding-left: 25px;
 }
@@ -51,7 +51,7 @@ body {
     text-shadow: 10px 0px 10px var(--preto);
 }
 
-.blusa{
+.blusa {
     margin: 25px;
     padding: 20px;
     border-radius: 10px;
@@ -72,7 +72,7 @@ body {
     text-shadow: 10px 0px 10px var(--preto);
 }
 
-.blusa{
+.blusa {
     margin: 25px;
     padding: 20px;
     border-radius: 10px;
@@ -93,7 +93,7 @@ body {
     text-shadow: 10px 0px 10px var(--preto);
 }
 
-.camiseta{
+.camiseta {
     margin: 25px;
     padding: 20px;
     border-radius: 10px;
@@ -114,7 +114,7 @@ body {
     text-shadow: 10px 0px 10px var(--preto);
 }
 
-.vestido{
+.vestido {
     margin: 25px;
     padding: 20px;
     border-radius: 10px;
@@ -135,7 +135,7 @@ body {
     text-shadow: 10px 0px 10px var(--preto);
 }
 
-.calças{
+.calças {
     margin: 25px;
     padding: 20px;
     border-radius: 10px;
@@ -156,7 +156,7 @@ body {
     text-shadow: 10px 0px 10px var(--preto);
 }
 
-.sapato{
+.sapato {
     margin: 25px;
     padding: 20px;
     border-radius: 10px;
@@ -177,7 +177,7 @@ body {
     text-shadow: 10px 0px 10px var(--preto);
 }
 
-.infantil{
+.infantil {
     margin: 25px;
     padding: 20px;
     border-radius: 10px;
@@ -200,9 +200,10 @@ body {
 
 @media (max-width: 768px) {
 
-    .textos{
+    .textos {
         font-size: 20px;
     }
+
     .colunas {
         display: flex;
         flex-wrap: wrap;
