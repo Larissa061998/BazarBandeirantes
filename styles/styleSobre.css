@@ -13,9 +13,25 @@
     border: 5px solid var(--rosa-claro);
     border-radius: 20px;
     width: 90%;
-    margin: 20px;
     margin-top: 50px;
-    padding: 20px;
+    margin-left: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.titulo{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: var(--rosa-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* colocar o testo no meio e a imagem a esquerda  */
+    flex-direction: row;
+
 }
 
 .sobrenos-img{
@@ -24,18 +40,43 @@
     width: 300px;
     border: 1px solid var(--rosa-claro);
     border-radius: 20px;
-    float: right;
+    
 }
 
 .text-sobrenos{
     padding-right: 50px;
+    padding-left: 50px;
 }
 
 .text-empresa{
-    padding-top: 50px;
-    text-align: center;
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 25px;
+    padding-left: 90px;
+    padding-right: 90px;
+
     
 }
+.text-empresa_negrito{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-weight: bold;
+
+}
+
+.escrito_por{
+    padding-top: 15px;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    font-weight: bold;
+}
+
+
 
 
 /* Media Query para dispositivos móveis */
